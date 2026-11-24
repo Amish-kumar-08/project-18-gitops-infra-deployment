@@ -9,12 +9,10 @@
       "Action": "sts:AssumeRoleWithWebIdentity",
       "Condition": {
         "StringEquals": {
-          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
-        },
-        "StringLike": {
+          "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
           "token.actions.githubusercontent.com:sub": [
-            "repo:Amish-kumar-08/project-18-gitops-infra-deployment:pull_request",
-            "repo:Amish-kumar-08/project-18-gitops-infra-deployment:environment:production"
+            "repo:Amish-kumar-08@358250174/project-18-gitops-infra-deployment@1469782395:pull_request",
+            "repo:Amish-kumar-08@358250174/project-18-gitops-infra-deployment@1469782395:environment:production"
           ]
         }
       }
