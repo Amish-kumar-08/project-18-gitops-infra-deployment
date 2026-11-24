@@ -81,6 +81,17 @@ jobs:
       - name: Terraform Init
         run: terraform init -input=false
 
+      - name: Debug Terraform Backend and State
+        run: |
+          echo "Commit SHA:"
+          git rev-parse HEAD
+
+          echo "Terraform backend configuration:"
+          grep -A 8 'backend "s3"' main.tf
+
+          echo "Terraform state resources:"
+          terraform state list
+
       - name: Terraform Validate
         run: terraform validate
 
