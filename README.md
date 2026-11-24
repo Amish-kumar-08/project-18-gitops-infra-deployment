@@ -170,4 +170,4 @@ The following items are used to verify project completion:
 ## GitHub Repository
 
 [Project 18 - GitOps Infrastructure Deployment](https://github.com/Amish-kumar-08/project-18-gitops-infra-deployment)
-----
+-----
